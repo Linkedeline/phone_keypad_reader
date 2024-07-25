@@ -1,0 +1,15 @@
+/home/linkydeline/code/Cs/phone_keypad_reader/obj/Debug/net8.0/phone_keypad_reader.GeneratedMSBuildEditorConfig.editorconfig
+/home/linkydeline/code/Cs/phone_keypad_reader/obj/Debug/net8.0/phone_keypad_reader.AssemblyInfoInputs.cache
+/home/linkydeline/code/Cs/phone_keypad_reader/obj/Debug/net8.0/phone_keypad_reader.AssemblyInfo.cs
+/home/linkydeline/code/Cs/phone_keypad_reader/obj/Debug/net8.0/phone_keypad_reader.csproj.CoreCompileInputs.cache
+/home/linkydeline/code/Cs/phone_keypad_reader/obj/Debug/net8.0/phone_keypad_reader.sourcelink.json
+/home/linkydeline/code/Cs/phone_keypad_reader/bin/Debug/net8.0/phone_keypad_reader
+/home/linkydeline/code/Cs/phone_keypad_reader/bin/Debug/net8.0/phone_keypad_reader.deps.json
+/home/linkydeline/code/Cs/phone_keypad_reader/bin/Debug/net8.0/phone_keypad_reader.runtimeconfig.json
+/home/linkydeline/code/Cs/phone_keypad_reader/bin/Debug/net8.0/phone_keypad_reader.dll
+/home/linkydeline/code/Cs/phone_keypad_reader/bin/Debug/net8.0/phone_keypad_reader.pdb
+/home/linkydeline/code/Cs/phone_keypad_reader/obj/Debug/net8.0/phone_keypad_reader.dll
+/home/linkydeline/code/Cs/phone_keypad_reader/obj/Debug/net8.0/refint/phone_keypad_reader.dll
+/home/linkydeline/code/Cs/phone_keypad_reader/obj/Debug/net8.0/phone_keypad_reader.pdb
+/home/linkydeline/code/Cs/phone_keypad_reader/obj/Debug/net8.0/phone_keypad_reader.genruntimeconfig.cache
+/home/linkydeline/code/Cs/phone_keypad_reader/obj/Debug/net8.0/ref/phone_keypad_reader.dll

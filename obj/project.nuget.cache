@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "pGYRUVww88pYwMf4/byYP4Yb/dRfZ2wJGD/ZPrWyUKpN96+WMnyGe+ddEchXTEYqph5vIiezh3+amwJBVn2Bvw==",
+  "success": true,
+  "projectFilePath": "/home/linkydeline/code/Cs/phone_keypad_reader/phone_keypad_reader.csproj",
+  "expectedPackageFiles": [
+    "/home/linkydeline/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.6/microsoft.aspnetcore.app.ref.8.0.6.nupkg.sha512"
+  ],
+  "logs": []
+}
