@@ -4,6 +4,7 @@ using System.Collections.Generic;
 
 public class OldPhonePad
 {
+  // Dictionary mapping each number to its corresponding characters on an old phone keypad
   private static readonly Dictionary<char, string> keypadMapping = new Dictionary<char, string>
   {
     {'1', "&'("}, {'2', "ABC"}, {'3', "DEF"},
@@ -16,42 +17,52 @@ public class OldPhonePad
   {
     if (string.IsNullOrEmpty(input) || !input.EndsWith("#"))
       throw new ArgumentException("Input must not be empty and must end with '#'");
-  
-    StringBuilder result = new StringBuilder();
+
+    var result = new StringBuilder();
     char lastKey = '\0';
     int repeatCount = 0;
 
     foreach (char c in input)
     {
-      if (c == '#') break;
-
-      if (c == ' ') continue;
-
-      if (c == '*')
+      switch (c)
       {
-        if (result.Length > 0)
-          result.Length--;
-          lastKey = '\0';
-          repeatCount = 0;
+        case '#': 
+          return result.ToString(); // End of input, return result
+        case ' ': 
+          continue; // Ignore spaces
+        case '*': 
+          HandleBackspace(result, ref lastKey, ref repeatCount);
           continue;
+        default:
+          if (!keypadMapping.ContainsKey(c))
+            throw new ArgumentException($"Invalid character in input: {c}");
+            ProcessKeyPress(c, result, ref lastKey, ref repeatCount);
+            break;
       }
+    }
+    return result.ToString(); // This line should never be reached due to '#' check
+  }
 
-      if (!keypadMapping.ContainsKey(c))
-        throw new ArgumentException($"Invalid character in input: {c}");
+  private static void HandleBackspace(StringBuilder result, ref char lastKey, ref int repeatCount)
+  {
+    if (result.Length > 0) result.Length--;
+    lastKey = '\0';
+    repeatCount = 0;
+  }
 
-      if (c == lastKey)
-      {
-        repeatCount = (repeatCount + 1) % keypadMapping[c].Length;
-        result.Length--; // Remove the last character before adding the new one
-      }
-      else
-      {
-        lastKey = c;
-        repeatCount = 0;
-      }
-      result.Append(keypadMapping[c][repeatCount]);
+  private static void ProcessKeyPress(char key, StringBuilder result, ref char lastKey, ref int repeatCount)
+  {
+    if (key == lastKey)
+    {
+      repeatCount = (repeatCount + 1) % keypadMapping[key].Length;
+      result.Length--; // Remove the last character before adding the new one
+    }
+    else
+    {
+      lastKey = key;
+      repeatCount = 0;
     }
 
-    return result.ToString();
+    result.Append(keypadMapping[key][repeatCount]);
   }
 }
