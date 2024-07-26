@@ -28,8 +28,10 @@ public class OldPhonePad
       {
         case '#': 
           return result.ToString(); // End of input, return result
-        case ' ': 
-          continue; // Ignore spaces
+        case ' ': // reset Last Ket and repeatCount
+          lastKey = '\0';
+          repeatCount = 0; 
+          continue; 
         case '*': 
           HandleBackspace(result, ref lastKey, ref repeatCount);
           continue;

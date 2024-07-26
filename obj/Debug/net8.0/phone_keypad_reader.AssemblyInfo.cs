@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("phone_keypad_reader")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fb10282c7a0dbeaee0079f736d28b019276fb7e5")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+07c02a6a3262e512c9dbd6493e9291b5cae3648b")]
 [assembly: System.Reflection.AssemblyProductAttribute("phone_keypad_reader")]
 [assembly: System.Reflection.AssemblyTitleAttribute("phone_keypad_reader")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
